@@ -1,13 +1,14 @@
 class DataBroker {
+String[] death;
 
+  void loadData() {
+    death = loadStrings("dnd.csv");
+    String [] deathList = split(death[0], ',');
+    String[] token = splitTokens(death[1], ";"); 
 
-  void loaddata() {
-
-    String[] dnd = loadStrings("dnd.csv");
-    println("there are " + dnd.length + " lines");
-    for (int i = 0; i < dnd.length; i++) {
-      println(dnd[i]);
+    println("there are " + deathList.length + " data");
+    for (int i = 0; i < deathList.length; i++) {
+      println(token[1]); 
     }
-    
   }
 }

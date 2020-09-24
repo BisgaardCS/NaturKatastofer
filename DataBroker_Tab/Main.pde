@@ -7,7 +7,7 @@ void setup() {
   DB = new DataBroker();
 
   //
-  DB.loaddata();
+  DB.loadData();
 }
 
 
